@@ -1,0 +1,225 @@
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    margin: 0;
+}
+
+#contain{
+    display: flex;
+    justify-content: center;
+}
+
+.article, section{
+    flex:0;
+}
+
+
+.phone{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.image{
+    position: absolute; right: 60px; top: 25px;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 10s infinite;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.image:nth-child(1){
+    animation-delay: 0s;
+}
+
+.image:nth-child(2){
+    animation-delay: 2s;
+}
+
+.image:nth-child(3){
+    animation-delay: 4s;
+}
+
+.image:nth-child(4){
+    animation-delay: 6s;
+}
+
+.bloc1{
+    border-radius: 1px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    margin-top: 50px;
+    width: 350px;
+}
+
+h1{
+    font-family: 'Joseph Sophia';
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+}
+
+
+#id{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 57vh;
+    padding-bottom: 2px;
+}
+
+#idt, #mdpt{
+    font-size: 17px;
+}
+
+#mdp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 57vh;
+    padding-top: 2px;
+} 
+
+input:focus-within::placeholder {
+    color: transparent;
+}
+
+input{
+    font-size: 20px;
+    width: 47vh;
+    height: 5vh;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+}
+
+.co{
+    height: 40px;
+    color: white;
+    background-color: rgb(81, 191, 235);
+    border-radius: 10px;
+    margin: 5% 8% 0 7%;
+    font-size: 16px;
+    font-weight: bolder;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    height: 5.2vh;
+}
+
+.ou{
+    text-align: center;
+    font-size:medium;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+#hr1{
+    margin-left: 25px;
+}
+
+#hr2{
+    margin-right: 25px;
+}
+
+
+.chou{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #385185;
+}
+
+#fog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: large;
+    text-decoration: none;
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #385185;
+}
+
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+.log a{
+    color: rgb(43, 141, 180);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.app{
+    text-align: center;
+    font-size: 18px;
+}
+
+.appli{
+    display: flex;
+    justify-content: center;
+    height:7vh;
+    width: 50vh;
+}
+
+#play{
+    margin-right: 4px;
+}
+
+#mic{
+    margin-left: 4px;
+}
+
+.pp{
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.pp a{
+    opacity: 0.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer p{
+    text-align: center;
+    opacity: 0.8;
+} 
